@@ -3,8 +3,9 @@ Theme Name: Foundry
 Description: Child theme for the twentyeleven theme 
 Author: Andrew Clayton
 Template: twentyeleven
-*/
 @import url("../twentyeleven/style.css");
+*/
+
 
 
 /* =Page Structure
@@ -38,7 +39,10 @@ body {
 	margin-right: 2.5%;
 	width: 17.5%;
 }
-
+.main{
+   width:800px;
+   margin: 0 auto;
+}
 .home #content {
 	margin: 0 5% 0 5%;
 	width: 70%;
@@ -62,6 +66,7 @@ body {
 .entry-header {
 	width: 100% !important;
 	margin: 0 !important;
+	text-align: center;
 	padding: 0px;
 }
 
@@ -70,6 +75,10 @@ body {
 	font-size: 24px !important;
 	color: #DDD !important;
 	line-height: 36px !important;
+}
+
+.body-main{
+	width:800px;
 }
 
 .entry-content {
@@ -301,7 +310,7 @@ img.aligncenter {
   	width: 646 px !important;
 	height: 548 px;
   	border: solid 1px #cc6600;
-	background-image: url(http://amalurfoundry.com/talentcalc/might/mightbgd.gif);
+	background-color: #000;
 
 }
 
@@ -310,7 +319,7 @@ img.aligncenter {
   	width: 646 px !important;
 	height: 548 px;
   	border: solid 1px #cc6600;
-	background-image: url(http://amalurfoundry.com/talentcalc/finesse/finbgd.gif);
+	background-color: #000;
 }
 
 #sorcery {
@@ -318,7 +327,7 @@ img.aligncenter {
   	width: 646 px !important;
 	height: 548 px;
   	border: solid 1px #cc6600;
- 	background-image: url(http://amalurfoundry.com/talentcalc/sorcery/sorcbgd.gif);
+ 	background-color: #000;
 }
 
 #pageheader {
@@ -341,7 +350,7 @@ div[id^="tab_"] {
 	width: 214 px !important;
 	padding-top: 6px;
 	height: 34px;
-	//background-image: url(http://amalurfoundry.com/talentcalc/tabtest.gif);
+	//background-image: url(talentcalc/tabtest.gif);
 	color: #BBB;
 	font: 24px "Helvetica Neue";
 	text-align: center;

@@ -4,7 +4,7 @@
 function setsorcery(Skills,Attributes) {
 	this.Skills = Skills
 	this.masteryid = 3
-	this.masteryname = "Sorcery"
+	this.masteryname = "Ä§·¨"
 	this.Attributes = Attributes
 }
 

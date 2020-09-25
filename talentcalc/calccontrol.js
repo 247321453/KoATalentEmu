@@ -433,50 +433,6 @@ document.getElementById("tab_" + i).style.backgroundImage="url(talentcalc/tabina
 }
 
 //DISPLAY LINKBACK TO TALENT SPEC
-function UpdateLinkBack() {
-	var HTML = "http://amalurfoundry.com/calculator?"
-	var TempMight = ""
-	var TempFin = ""
-	var TempSorc = ""
-
-	if (UserSkills[_Mastery1]) {
-      //LOOP THROUGH MIGHT TO BUILD URL VARIABLES
-      for (var x = 0 ; x <= UserSkills[_Mastery1].SkillLevel.length ; x++) {
-      	if (UserSkills[_Mastery1].SkillLevel[x]) {
-            TempMight = TempMight + UserSkills[_Mastery1].SkillLevel[x]
-            }
-        else {
-            TempMight = TempMight + "0"
-        }
-      } 
-	}
-
-	 if (UserSkills[_Mastery2]) {
-		//LOOP THROUGH FINESSE TO BUILD URL VARIABLES
-		for (var x = 0 ; x <= Mastery[_Mastery2].Skills.length ; x++) {
-      		if (UserSkills[_Mastery2].SkillLevel[x]) {
-            	TempFin = TempFin + UserSkills[_Mastery2].SkillLevel[x]
-            	}
-        	else {
-            	TempFin = TempFin + "0"
-          	}
-		}
-	} 
-  
-	if (UserSkills[_Mastery3]) {
-		//LOOP THROUGH FINESSE TO BUILD URL VARIABLES
-		for (var x = 0 ; x <= Mastery[_Mastery3].Skills.length ; x++) {
-			if (UserSkills[_Mastery3].SkillLevel[x]) {
-            	TempSorc = TempSorc + UserSkills[_Mastery3].SkillLevel[x]
-            	}
-        	else {
-            	TempSorc = TempSorc + "0"
-          	}
-		}
-	}
-
-//	document.getElementById("linkback").value = HTML + TempMight + "&" + TempFin + "&" + TempSorc
-}
 
 //USE A CUSTOM URL TO FILL TREE
 function SetFormFromReturn(string,masteryid) {

@@ -4,7 +4,7 @@
 function setfinesse(Skills,Attributes) {
 	this.Skills = Skills
 	this.masteryid = 2
-	this.masteryname = "Finesse"
+	this.masteryname = "¡È«…"
 	this.Attributes = Attributes
 }
 

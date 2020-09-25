@@ -24,7 +24,7 @@ function SpellInfo(spellinfo) {
 function setmight(Skills,Attributes) {
 	this.Skills = Skills
 	this.masteryid = 1
-	this.masteryname = "Might"
+	this.masteryname = "Á¦Á¿"
 	this.Attributes = Attributes
 }
 
