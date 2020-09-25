@@ -1,0 +1,504 @@
+/*
+Theme Name: Foundry
+Description: Child theme for the twentyeleven theme 
+Author: Andrew Clayton
+Template: twentyeleven
+*/
+@import url("../twentyeleven/style.css");
+
+
+/* =Page Structure
+----------------------------------------------- */
+
+body {
+	padding: 0 2em;
+}
+
+#page {
+	margin: 2em auto;
+	max-width: 1000px;
+}
+
+#branding hgroup {
+	margin: 0 5%;
+}
+
+#access div {
+	margin: 0 5%;
+}
+
+#primary {
+	float: left;
+	margin: 0, 0, -30%, 0;
+	width: 100%;
+}
+
+#secondary {
+	float: right;
+	margin-right: 2.5%;
+	width: 17.5%;
+}
+
+.home #content {
+	margin: 0 5% 0 5%;
+	width: 70%;
+}
+
+.page-template-sidebar-page-php #content {
+	margin: 0 5% 0 5%;
+	width: 70%;
+}
+
+.single #content {
+	margin: 0 5% 0 5%;
+	width: 70%;
+}
+
+.page-template-default #content {
+	margin: 0 5% 0 5% !important;
+	width: 90% !important;
+}
+
+.entry-header {
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0px;
+}
+
+.entry-title , h1.entry-title {
+	padding: 0;
+	font-size: 24px !important;
+	color: #DDD !important;
+	line-height: 36px !important;
+}
+
+.entry-content {
+	width: 100% !important;
+	margin: 0 !important;
+	vertical-align: top;
+}
+
+.entry-meta {
+	position: relative !important;
+}
+
+table {
+	vertical-align: top !important;
+}
+
+
+/* =Appearance Tweaks
+----------------------------------------------- */
+
+/* Hide Title */
+#site-title a {
+        display: none;
+        padding: 0px;
+}
+
+#site-title {
+	padding: 0px;
+}
+
+/* Hide Description */
+#site-description {
+        display: none;
+}
+
+/* Reposition Search Box */
+#branding #searchform {
+	top: 10px !important;
+	right: 10px !important;
+}
+
+/* Realign Navigation Bar */
+#access div {
+	margin: 0 0 0 10px;
+}
+
+
+/* Reduce Page Title Margins */
+#main, .singular.page .hentry {
+	padding-top: 25px;
+}
+
+/* Remove Pixel Bar Above Banner */
+#branding {
+	border-top: 0px !important;
+}
+
+/* Realign Footer Text */
+#colophon {
+	display: box;
+	background-color: #060606;
+	}
+
+#site-generator {
+	background-color: none;
+	text-align: left;
+	margin: 0 0 0 5%;
+	border-top: none;
+}
+
+/* Enable Image Wrapping */
+img.alignright {
+	float:right; 
+	margin:10px !important;
+}
+
+img.alignleft {
+	float:left; 
+	margin:10px !important;
+}
+
+img.aligncenter {
+	display: block; 
+	margin: 0 auto;
+}
+
+.alignright {
+	float:right; 
+}
+
+.alignleft {
+	float:left; 
+}
+
+.aligncenter {
+	display: block; 
+	margin: 0 auto;
+}
+
+
+/* =Change Fonts
+----------------------------------------------- */
+.entry-content h1 {
+	color: #BBB !important;
+	font: 24px "Helvetica Neue";	
+}
+
+.entry-content h2 {
+	color: #BBB !important;
+	font: 20px "Helvetica Neue";	
+}
+
+
+/* =Comment Form
+----------------------------------------------- */
+
+/* Hide Comments Are Closed */
+.nocomments {
+	display: none;
+}
+
+/* Hide Email and Website Fields */
+.comment-form-email {
+	display: none;
+}
+
+.comment-form-url {
+	display: none;
+}
+
+.comment-notes {
+	display: none;
+}
+
+.commentlist {
+	width: 90% !important;
+	margin-left: 10%;
+}
+
+#comments {
+	width: 100%
+}
+
+#respond {
+	width: 95% !important;
+}
+
+
+/* =Correct Single Post View Structure
+----------------------------------------------- */
+.single #primary {
+	margin: 0 -30% 0 0;
+}
+ 
+#nav-single {
+	display: none;
+}
+
+.single .entry-header, .single .entry-content, .single footer.entry-meta, .single #comments-title {
+	width: 100%;
+}
+ 
+.singular .hentry {
+	padding: 0;
+}
+
+/* =INTERACTIVE MAP STYLES
+----------------------------------------------- */
+#map_canvas div {
+	color: black !important;
+}
+
+
+/* =BBPRESS STYLES
+----------------------------------------------- */
+.bbPress #content {
+	margin: 0 5% 0 5% !important;
+	width: 90% !important;
+}
+
+.page-template-page-front-forums-php #content {
+	margin: 0 5% 0 5% !important;
+	width: 90% !important;
+}
+
+.bbp-reply-author {
+	width: 15%;
+	padding: 16px 0 16px 20px !important;
+	border-bottom: solid 1px #DDD  !important;
+	background: #1D1D1D;
+}
+
+.bbp-reply-content {
+	padding: 16px 0 16px 20px !important;
+	border-bottom: solid 1px #DDD  !important;
+	vertical-align: top !important;
+}
+
+#post-toolbar {
+	width: 500px !important;
+	margin-left: 0 !important;
+}
+
+
+/* =TALENT CALCULATOR
+----------------------------------------------- */
+
+/* ELEMENT STRUCTURE */
+
+#talentcalc {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#talentcalc td{
+	border: 0;
+	padding: 0;
+	line-height: normal;
+}
+
+#talentcalc td img{
+	display: block;
+	max-width: 100%;
+}
+
+#might {
+	table-layout:fixed;
+  	width: 646 px !important;
+	height: 548 px;
+  	border: solid 1px #cc6600;
+	background-image: url(http://amalurfoundry.com/talentcalc/might/mightbgd.gif);
+
+}
+
+#finesse {
+	table-layout:fixed;
+  	width: 646 px !important;
+	height: 548 px;
+  	border: solid 1px #cc6600;
+	background-image: url(http://amalurfoundry.com/talentcalc/finesse/finbgd.gif);
+}
+
+#sorcery {
+	table-layout:fixed;
+  	width: 646 px !important;
+	height: 548 px;
+  	border: solid 1px #cc6600;
+ 	background-image: url(http://amalurfoundry.com/talentcalc/sorcery/sorcbgd.gif);
+}
+
+#pageheader {
+	font-size: 24pt;
+	color: #BBB;
+	text-align: center;
+	width: 646px;
+}
+
+#treetabs {
+	table-layout:fixed;
+	height: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 644px;
+	border: none;
+}
+
+div[id^="tab_"] {
+	width: 214 px !important;
+	padding-top: 6px;
+	height: 34px;
+	//background-image: url(http://amalurfoundry.com/talentcalc/tabtest.gif);
+	color: #BBB;
+	font: 24px "Helvetica Neue";
+	text-align: center;
+}
+
+div[id^="spell_"]
+{
+	width: 92px;
+	height: 16px;
+	font-size: 10pt;
+	color: #BBB;
+	text-align: center;
+}
+
+div[id^="masterytree_"]
+{
+	width: 646px;
+}
+
+#buildinfo {
+	display: table-cell;
+	width= 30%;
+	vertical-align: top;
+	padding-left: 37px !important;
+	padding-top: 13px !important;
+}
+	
+table#statstable {
+  	border: solid 1px #cc6600;
+	padding: 5px;
+  	font-size: 12pt;
+  	color: #BBB;
+	margin-bottom: 20px;
+}
+
+#pointsremaining
+{
+	font-size: 12pt;
+	color: #BBB ;
+}
+
+#masterypoints
+{
+	font-size: 12pt;
+	color: #BBB ;
+}
+
+#charlevel
+{
+	font-size: 12pt;
+	color: #BBB ;
+}
+
+#resetbuttons {
+	font-size: 12pt;
+}
+
+
+#health {
+  color: red;
+  text-align:right;
+  padding: 5px;
+}
+
+#mana {
+  color: blue;
+  text-align:right;
+  padding: 5px;
+}
+
+/* SPELL LIST */
+
+#masteryname {
+	color: #cc6600;
+	font-size: 12pt;
+}
+
+#spells
+{
+	width
+	color: #BBB;
+	font-size: 10pt;
+}
+
+#destinies
+{
+	width
+	color: #BBB;
+	font-size: 10pt;
+}
+
+#spelllistingheader
+{
+	font-size: 12pt;
+	color: #BBB;
+}
+
+/* TOOLTIP FORMAT */
+
+#tip
+{
+	width: 300px;
+	display: block;
+	position:absolute;
+	left: 25px;
+	top: 600px;
+	border: 1px solid #CC6600;
+	background-color: Black;
+	padding: 5px;
+	filter: alpha(opacity=90); /* IE's opacity*/
+	opacity: 0.90;
+}
+
+#spellname
+{
+	font-size: 12pt;
+	color: #cc6600;
+}
+
+#spelldesc
+{
+	font-size: 10pt;
+	color: #BBB;
+}
+
+#currentranklevel
+{
+	font-size: 10pt;
+	color: #ECE89F;
+}
+
+#currentspell
+{
+	font-size: 10pt;
+	color: #FFFFFF;
+}
+
+#nextranklevel
+{
+	font-size: 10pt;
+	color: #ECE89F;
+}
+
+#nextspell
+{
+	font-size: 10pt;
+	color: #A09D98;
+}
+
+#prereq
+{
+	color: red;
+	font-size: 10pt;
+}
+
+#reqpoints
+{
+	color: red;
+	font-size: 10pt;
+}

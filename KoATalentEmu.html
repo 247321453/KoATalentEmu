@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="en-US">
+ <head>
+  <title> 阿玛拉王国:惩罚之天赋模拟器0.9版 </title>
+  <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+  <link rel='stylesheet' id='leafletmapsmarker-css'  href='leaflet.css' type='text/css' media='all' /> 
+  <link rel='stylesheet' id='dark-css'  href='dark.css' type='text/css' media='all' />
+
+  <script type='text/javascript' src='jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='leaflet.js'></script>
+<script type="text/javascript" src="talentcalc/calccontrol.js"></script>
+<script type="text/javascript" src="talentcalc/might.js"></script>
+<script type="text/javascript" src="talentcalc/finesse.js"></script>
+<script type="text/javascript" src="talentcalc/sorcery.js"></script>
+<script type="text/javascript" src="talentcalc/destiny.js"></script>
+ </head>
+
+ <body>
+  	<header class="entry-header">
+		<h1 class="entry-title">阿玛拉王国:惩罚之天赋模拟器0.9版</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<TABLE id="talentcalc" width="100%" table-layout:"fixed" vertical-align="top" border="0"><TR><TD table-layout:"fixed" valign="top" border="0"><div id="pageheader">
+   <table id="treetabs"><tr>
+      <td><div id="tab_1" onClick="loadTree(1)" onmouseover="this.style.cursor='pointer'" style="background-image:url(http://amalurfoundry.com/talentcalc/tabactive.gif);">力量</div></td>
+      <td><div id="tab_2" onClick="loadTree(2)" onmouseover="this.style.cursor='pointer'" style="background-image:url(http://amalurfoundry.com/talentcalc/tabinactive.gif);">灵巧</div></td>
+      <td><div id="tab_3" onClick="loadTree(3)" onmouseover="this.style.cursor='pointer'" style="background-image:url(http://amalurfoundry.com/talentcalc/tabinactive.gif);">法术</div></td>
+   </tr></table></div>
+
+<!-- MIGHT TREE -->
+<div id="masterytree_1" style="display:block">
+    <table id="might" cellpadding="0" cellspacing="0" border="0">
+<!-- TIER 6 TALENTS -->
+    <tr>
+    	<td></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(1,22)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,22)" align="center" valign="center">
+        <img id="icon_1_70_22" src="talentcalc/might/22b.gif"><div id="spell_1_22"></div></td>
+        <td onMouseOver="DrawSpell(1,23)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,23)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_70_23" src="talentcalc/might/23b.gif"><div id="spell_1_23"></div></td>
+        <td></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(1,24)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,24)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_70_24" src="talentcalc/might/24b.gif"><div id="spell_1_24"></div></td>
+	</tr>
+<!-- TIER 5 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(1,18)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,18)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_50_18" src="talentcalc/might/0b.gif"><div id="spell_1_18"></div></td>
+        <td></td> 
+        <td onMouseOver="DrawSpell(1,19)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,19)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_50_19" src="talentcalc/might/19b.gif"><div id="spell_1_19"></div></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(1,20)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,20)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_50_20" src="talentcalc/might/20b.gif"><div id="spell_1_20"></div></td>
+	<td></td>
+        <td onMouseOver="DrawSpell(1,21)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,21)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_50_21" src="talentcalc/might/21b.gif"><div id="spell_1_21"></div></td>
+	</tr>
+<!-- TIER 4 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(1,14)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,14)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_35_14" src="talentcalc/might/0b.gif"><div id="spell_1_14"></div></td>
+        <td onMouseOver="DrawSpell(1,15)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,15)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_35_15" src="talentcalc/might/15b.gif"><div id="spell_1_15"></div></td>
+        <td onMouseOver="DrawSpell(1,16)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,16)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_35_16" src="talentcalc/might/16b.gif"><div id="spell_1_16"></div></td>
+	<td></td>
+        <td onMouseOver="DrawSpell(1,17)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,17)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_35_17" src="talentcalc/might/17b.gif"><div id="spell_1_17"></div></td>
+        <td></td>
+        <td></td>
+	</tr>
+<!-- TIER 3 TALENTS -->
+    <tr>
+    	<td></td>
+    	<td onMouseOver="DrawSpell(1,10)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,10)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_20_10" src="talentcalc/might/10b.gif"><div id="spell_1_10"></div></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(1,11)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,11)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_20_11" src="talentcalc/might/11b.gif"><div id="spell_1_11"></div></td>
+        <td onMouseOver="DrawSpell(1,12)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,12)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_20_12" src="talentcalc/might/12b.gif"><div id="spell_1_12"></div></td>
+	<td onMouseOver="DrawSpell(1,13)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,13)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_20_13" src="talentcalc/might/13b.gif"><div id="spell_1_13"></div></td>
+	<td></td>
+	</tr>
+<!-- TIER 2 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(1,5)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,5)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_5_5" src="talentcalc/might/5b.gif"><div id="spell_1_5"></div></td>
+        <td onMouseOver="DrawSpell(1,6)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,6)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_5_6" src="talentcalc/might/6b.gif"><div id="spell_1_6"></div></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(1,7)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,7)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_5_7" src="talentcalc/might/7b.gif"><div id="spell_1_7"></div></td>
+        <td></td>
+	<td onMouseOver="DrawSpell(1,8)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,8)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_5_8" src="talentcalc/might/8b.gif"><div id="spell_1_8"></div></td>
+	<td onMouseOver="DrawSpell(1,9)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,9)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_5_9" src="talentcalc/might/9b.gif"><div id="spell_1_9"></div></td>
+	</tr>
+<!-- TIER 1 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(1,0)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,0)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_0_0" src="talentcalc/might/0.gif"><div id="spell_1_0"></div></td>
+        <td onMouseOver="DrawSpell(1,1)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,1)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_0_1" src="talentcalc/might/1.gif"><div id="spell_1_1"></div></td>
+        <td onMouseOver="DrawSpell(1,2)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,2)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_0_2" src="talentcalc/might/2.gif"><div id="spell_1_2"></div></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(1,3)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,3)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_0_3" src="talentcalc/might/3.gif"><div id="spell_1_3"></div></td>
+        <td></td>
+	<td onMouseOver="DrawSpell(1,4)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,1,event.button,4)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_1_0_4" src="talentcalc/might/4.gif"><div id="spell_1_4"></div></td>
+	</tr>
+</table>
+</div>
+
+<!-- FINESSE TREE -->
+<div id="masterytree_2" style="display:none">
+    <table id="finesse" cellpadding="0" cellspacing="0" border="0">
+<!-- TIER 6 TALENTS -->
+    <tr>
+    	<td></td>
+        <td></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(2,23)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,23)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_70_23" src="talentcalc/finesse/23b.gif"><div id="spell_2_23"></div></td>
+        <td onMouseOver="DrawSpell(2,24)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,24)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_70_24" src="talentcalc/finesse/24b.gif"><div id="spell_2_24"></div></td>
+	<td></td>
+        <td onMouseOver="DrawSpell(2,25)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,25)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_70_25" src="talentcalc/finesse/25b.gif"><div id="spell_2_25"></div></td>
+	</tr>
+<!-- TIER 5 TALENTS -->
+    <tr>
+        <td onMouseOver="DrawSpell(2,19)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,19)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_50_19" src="talentcalc/finesse/19b.gif"><div id="spell_2_19"></div></td>
+        <td onMouseOver="DrawSpell(2,20)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,20)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_50_20" src="talentcalc/finesse/20b.gif"><div id="spell_2_20"></div></td>
+        <td onMouseOver="DrawSpell(2,21)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,21)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_50_21" src="talentcalc/finesse/21b.gif"><div id="spell_2_21"></div></td>
+        <td></td>
+	<td onMouseOver="DrawSpell(2,22)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,22)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_50_22" src="talentcalc/finesse/22b.gif"><div id="spell_2_22"></div></td>
+        <td></td>
+        <td></td> 
+	</tr>
+<!-- TIER 4 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(2,14)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,14)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_35_14" src="talentcalc/finesse/14b.gif"><div id="spell_2_14"></div></td>
+        <td onMouseOver="DrawSpell(2,15)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,15)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_35_15" src="talentcalc/finesse/15b.gif"><div id="spell_2_15"></div></td>
+        <td onMouseOver="DrawSpell(2,16)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,16)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_35_16" src="talentcalc/finesse/16b.gif"><div id="spell_2_16"></div></td>
+        <td onMouseOver="DrawSpell(2,17)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,17)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_35_17" src="talentcalc/finesse/17b.gif"><div id="spell_2_17"></div></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(2,18)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,18)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_35_18" src="talentcalc/finesse/18b.gif"><div id="spell_2_18"></div></td>
+        <td></td>
+	</tr>
+<!-- TIER 3 TALENTS -->
+    <tr>       
+    	<td></td>
+        <td></td>
+    	<td onMouseOver="DrawSpell(2,10)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,10)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_20_10" src="talentcalc/finesse/10b.gif"><div id="spell_2_10"></div></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(2,11)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,11)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_20_11" src="talentcalc/finesse/11b.gif"><div id="spell_2_11"></div></td>
+        <td onMouseOver="DrawSpell(2,12)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,12)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_20_12" src="talentcalc/finesse/12b.gif"><div id="spell_2_12"></div></td>
+    	<td onMouseOver="DrawSpell(2,13)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,13)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_20_13" src="talentcalc/finesse/13b.gif"><div id="spell_2_13"></div></td>
+	</tr>
+<!-- TIER 2 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(2,5)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,5)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_5_5" src="talentcalc/finesse/5b.gif"><div id="spell_2_5"></div></td>
+        <td onMouseOver="DrawSpell(2,6)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,6)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_5_6" src="talentcalc/finesse/6b.gif"><div id="spell_2_6"></div></td>
+        <td onMouseOver="DrawSpell(2,7)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,7)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_5_7" src="talentcalc/finesse/7b.gif"><div id="spell_2_7"></div></td>
+        <td></td>
+	<td onMouseOver="DrawSpell(2,8)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,8)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_5_8" src="talentcalc/finesse/8b.gif"><div id="spell_2_8"></div></td>
+	<td onMouseOver="DrawSpell(2,9)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,9)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_2_5_9" src="talentcalc/finesse/9b.gif"><div id="spell_2_9"></div></td>
+	<td></td>
+	</tr>
+<!-- TIER 1 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(2,0)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,0)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img src="talentcalc/finesse/0.gif"><div id="spell_2_0"></div></td><!-- Use same icon as BW1 -->
+        <td onMouseOver="DrawSpell(2,1)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,1)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img src="talentcalc/finesse/1.gif"><div id="spell_2_1"></div></td>
+        <td onMouseOver="DrawSpell(2,2)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,2)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img src="talentcalc/finesse/2.gif"><div id="spell_2_2"></div></td>
+        <td onMouseOver="DrawSpell(2,3)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,3)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img src="talentcalc/finesse/3.gif"><div id="spell_2_3"></div></td>
+        <td></td>
+        <td></td>
+	<td onMouseOver="DrawSpell(2,4)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,2,event.button,4)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img src="talentcalc/finesse/4.gif"><div id="spell_2_4"></div></td>
+	</tr>
+</table>
+</div>
+
+
+<!-- SORCERY TREE -->
+<div id="masterytree_3" style="display:none">
+    <table id="sorcery" cellpadding="0" cellspacing="0" border="0">
+<!-- TIER 6 TALENTS -->
+    <tr>
+    	<td></td>
+        <td></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(3,22)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,22)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_70_22" src="talentcalc/sorcery/22b.gif"><div id="spell_3_22"></div></td>
+        <td onMouseOver="DrawSpell(3,23)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,23)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_70_23" src="talentcalc/sorcery/23b.gif"><div id="spell_3_23"></div></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(3,24)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,24)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_70_24" src="talentcalc/sorcery/24b.gif"><div id="spell_3_24"></div></td>
+	</tr>
+<!-- TIER 5 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(3,18)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,18)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_50_18" src="talentcalc/sorcery/18b.gif"><div id="spell_3_18"></div></td> <!-- Use same icon as BW1 -->
+        <td onMouseOver="DrawSpell(3,19)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,19)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_50_19" src="talentcalc/sorcery/19b.gif"><div id="spell_3_19"></div></td>
+        <td onMouseOver="DrawSpell(3,20)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,20)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_50_20" src="talentcalc/sorcery/20b.gif"><div id="spell_3_20"></div></td>
+	<td></td>
+        <td></td> 
+        <td onMouseOver="DrawSpell(3,21)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,21)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_50_21" src="talentcalc/sorcery/21b.gif"><div id="spell_3_21"></div></td>
+        <td></td> 
+	</tr>
+<!-- TIER 4 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(3,13)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,13)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_35_13" src="talentcalc/sorcery/13b.gif"><div id="spell_3_13"></div></td>
+    	<td onMouseOver="DrawSpell(3,14)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,14)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_35_14" src="talentcalc/sorcery/14b.gif"><div id="spell_3_14"></div></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(3,15)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,15)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_35_15" src="talentcalc/sorcery/15b.gif"><div id="spell_3_15"></div></td>
+        <td onMouseOver="DrawSpell(3,16)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,16)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_35_16" src="talentcalc/sorcery/16b.gif"><div id="spell_3_16"></div></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(3,17)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,17)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_35_17" src="talentcalc/sorcery/17b.gif"><div id="spell_3_17"></div></td>
+	</tr>
+<!-- TIER 3 TALENTS -->
+    <tr>
+        <td></td>
+	<td onMouseOver="DrawSpell(3,9)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,9)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_20_9" src="talentcalc/sorcery/9b.gif"><div id="spell_3_9"></div></td>
+    	<td onMouseOver="DrawSpell(3,10)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,10)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_20_10" src="talentcalc/sorcery/10b.gif"><div id="spell_3_10"></div></td>
+        <td></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(3,11)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,11)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_20_11" src="talentcalc/sorcery/11b.gif"><div id="spell_3_11"></div></td>
+        <td onMouseOver="DrawSpell(3,12)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,12)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_20_12" src="talentcalc/sorcery/12b.gif"><div id="spell_3_12"></div></td>
+	</tr>
+<!-- TIER 2 TALENTS -->
+    <tr>
+	<td onMouseOver="DrawSpell(3,4)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,4)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_5_4" src="talentcalc/sorcery/4b.gif"><div id="spell_3_4"></div></td>
+    	<td onMouseOver="DrawSpell(3,5)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,5)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_5_5" src="talentcalc/sorcery/5b.gif"><div id="spell_3_5"></div></td>
+	<td></td>
+        <td onMouseOver="DrawSpell(3,6)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,6)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_5_6" src="talentcalc/sorcery/6b.gif"><div id="spell_3_6"></div></td>
+        <td onMouseOver="DrawSpell(3,7)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,7)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_5_7" src="talentcalc/sorcery/7b.gif"><div id="spell_3_7"></div></td>
+        <td></td>
+	<td onMouseOver="DrawSpell(3,8)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,8)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_5_8" src="talentcalc/sorcery/8b.gif"><div id="spell_3_8"></div></td>
+	</tr>
+<!-- TIER 1 TALENTS -->
+    <tr>
+    	<td onMouseOver="DrawSpell(3,0)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,0)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_0_0" src="talentcalc/sorcery/0.gif"><div id="spell_3_0"></div></td><!-- Use same icon as BW1 -->
+        <td onMouseOver="DrawSpell(3,1)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,1)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_0_1" src="talentcalc/sorcery/1.gif"><div id="spell_3_1"></div></td>
+        <td onMouseOver="DrawSpell(3,2)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,2)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_0_2" src="talentcalc/sorcery/2.gif"><div id="spell_3_2"></div></td>
+        <td></td>
+        <td></td>
+        <td onMouseOver="DrawSpell(3,3)" onMouseDown="AddPoint(event.ctrlKey,event.shiftKey,3,event.button,3)" onMouseOut="KillTip()"  align="center" valign="center">
+        <img id="icon_3_0_3" src="talentcalc/sorcery/3.gif"><div id="spell_3_3"></div></td>
+        <td></td>
+	</tr>
+</table>
+</div>
+
+<!-- ADD BUILD INFO BOX -->
+<TD id="buildinfo">
+    <div id="stats">
+    <h1><u>角色信息</u><h1>
+	<TABLE width="200px" valign="top" id="statstable">
+	   <TR><TD><h2><u>英雄属性:</u></h2></TD><TD></TD></TR>
+	   <TR><TD>生命值:</TD><TD><div id="health">0</div></TD></TR>
+	   <TR><TD>魔法值:</TD><TD><div id="mana">0</div></TD></TR></TR>
+	</TABLE>
+    </div>
+
+    <div id="pointsremaining">剩余可分配天赋点:</div><BR>
+    <div id="masterypoints">各系已分配点数:</div><BR>
+    <div id="charlevel">当前角色等级:</div><BR><BR>
+
+    <div id="resetbuttons">
+    	左键单击 = 增加点数<BR>
+	右键单击 = 移除点数<BR>
+	Shift+左键 = 填满天赋<BR>
+	Shift+右键 = 清空天赋<BR><BR>
+    <a href="javascript:void(0);" onClick="SetPage(1,true);return false"><font color=#CC6600>重置力量天赋树</font></a><BR>
+    <a href="javascript:void(0);" onClick="SetPage(2,true);return false"><font color=#CC6600>重置灵巧天赋树</font></a><BR>
+    <a href="javascript:void(0);" onClick="SetPage(3,true);return false"><font color=#CC6600>重置法术天赋树</font></a><BR><BR>
+    </div>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--
+<div id="spelllistingheader"><B>Abilities Granted:</B> <input type="checkbox" id="verbose" onClick="DrawSpellList();">Show Details</div>
+<BR>
+<div id="spells">No Abilities Selected</div>
+<BR>
+<div id="destinies">No Destinies Unlocked</div>    -->
+
+<script type="text/javascript">
+PageStart();
+//DrawSpellList();
+</script>
+
+ </body>
+</html>
